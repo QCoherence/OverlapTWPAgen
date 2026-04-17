@@ -176,8 +176,7 @@ class JobFileGen:
 
 		file.close()
 
-
-
+	
 	def combine_position_dose(self, job_batch_files, write_layers_ref):
 
 		position_filename = self.junk_folder + 'position_' + write_layers_ref + '.txt'
@@ -185,12 +184,11 @@ class JobFileGen:
 
 		filenames = [position_filename, dose_filename]
 		with open(job_batch_files+write_layers_ref+'.njf', 'w') as outfile:
-		    for fname in filenames:
-		        with open(fname) as infile:
-		            outfile.write(infile.read())
+			for fname in filenames:
+				with open(fname) as infile:
+					outfile.write(infile.read())
 
-
-
+	
 	def WriteBatchFile(self, job_batch_files, litho_cycle, cycle_plan):
 
 		directory_client = self.directory_client
@@ -232,3 +230,11 @@ class JobFileGen:
 		file.write('sleeps 2\n')
 		file.write('run check_gun\n')
 		file.close()
+
+
+
+	
+
+
+
+	
