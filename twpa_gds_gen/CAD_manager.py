@@ -10,7 +10,6 @@ import importlib
 import json
 
 
-ok
 
 class CAD_manager():
 
