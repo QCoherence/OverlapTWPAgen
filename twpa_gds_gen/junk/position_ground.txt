@@ -1,0 +1,241 @@
+#---------------------------------------------------------
+
+# Generated using JobFileGen v2.0.0
+
+#---------------------------------------------------------
+
+# run nbwrite Roch_Nicolas/260415_Wf11_Feedline_test/ground -1=nico:nr1  -2=nico:nr2
+
+#---------------------------------------------------------
+.global
+registration     (0 000, 31500 000)  (31500 000, 31500 000)
+registration     (0 000,0 000)   (31500 000, 0 000)
+marktype         sqr8N
+focus            auto
+.end
+
+#---------------------------------------------------------
+
+#Feedline_test_V01_Wf11_00
+.block
+origin			 (-375 000,-375 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_00			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_01
+.block
+origin			 (7625 000,-375 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_01			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_02
+.block
+origin			 (15625 000,-375 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_02			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_03
+.block
+origin			 (23625 000,-375 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_03			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_10
+.block
+origin			 (-375 000,7625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_10			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_11
+.block
+origin			 (7625 000,7625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_11			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_12
+.block
+origin			 (15625 000,7625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_12			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_13
+.block
+origin			 (23625 000,7625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_13			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_20
+.block
+origin			 (-375 000,15625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_20			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_21
+.block
+origin			 (7625 000,15625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_21			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_22
+.block
+origin			 (15625 000,15625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_22			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_23
+.block
+origin			 (23625 000,15625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_23			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_30
+.block
+origin			 (-375 000,23625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_30			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_31
+.block
+origin			 (7625 000,23625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_31			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_32
+.block
+origin			 (15625 000,23625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_32			(0, 0)
+.end
+
+
+#Feedline_test_V01_Wf11_33
+.block
+origin			 (23625 000,23625 000)
+registration     (375 000, 7875 000)  (7875 000, 7875 000)
+registration     (375 000,375 000)   (7875 000, 375 000)
+marktype		 sqr8N
+focus			 map1
+stepsize		 (8000 000, 8000 000)
+grid			 (1, 1)
+base_dose		 1
+pattern			 Feedline_test_V01_Wf11_33			(0, 0)
+.end
+

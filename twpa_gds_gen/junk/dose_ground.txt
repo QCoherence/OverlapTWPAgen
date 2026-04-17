@@ -1,0 +1,160 @@
+.pattern
+id					Feedline_test_V01_Wf11_00
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_00.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_01
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_01.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_02
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_02.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_03
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_03.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_10
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_10.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_11
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_11.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_12
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_12.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_13
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_13.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_20
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_20.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_21
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_21.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_22
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_22.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_23
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_23.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_30
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_30.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_31
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_31.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_32
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_32.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
+.pattern
+id					Feedline_test_V01_Wf11_33
+filename			nicolasroch/260415/Feedline_test_V01_Wf11_33.npf
+
+dose       1        3
+dose       101        0
+
+.end
+
+
