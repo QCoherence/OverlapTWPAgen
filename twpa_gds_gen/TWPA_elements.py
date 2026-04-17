@@ -1,14 +1,17 @@
 """
 List of classes in the module:
-	- Overlap_jj 
-	- Overlap_capa 
+	- Overlap_jj
+	- Overlap_capa
+	- Resistor
 	- Pad
 	- FeedLine
 	- Meander
 	- Overlap_LER
-	- RHcell
-	- LHcell
-	- CRLHcell
+	- RH_cell
+	- LH_cell
+	- SNAIL_cell
+	- CRLH_cell
+	- Resistor_cell
 
 Note that all the classes store the variables self.x_size_of_cell and self.y_size_of_cell:
 1) x_size_of_cell idetifies the x position where the unit cell ends (where the next unit cell will be connected)
@@ -53,8 +56,10 @@ class Overlap_jj:
 
 		litho_overlap = self.litho_overlap
 		etching_offset = self.etching_offset
+
 		height = self.height_jj
 		width = self.width_jj
+
 		bottom_spacing = self.bottom_spacing_jj
 		top_spacing = self.top_spacing_jj
 		electrode_height_difference = self.electrode_height_difference
@@ -82,13 +87,12 @@ class Overlap_jj:
 
 		# add ground
 		if add_ground:
-			ground = gdstk.rectangle((-litho_overlap/2.0,-(height/2.0+electrode_height_difference+y_low_current_ground)), (spacing+width,(height/2.0+electrode_height_difference+y_low_current_ground)), layer=jj_ground_layer)
+			ground = gdstk.rectangle((-litho_overlap/2.0,-(height/2.0+electrode_height_difference+y_low_current_ground)), (top_spacing+width,(height/2.0+electrode_height_difference+y_low_current_ground)), layer=jj_ground_layer)
 
 			bottom_electrodes =  cell_out.get_polygons(layer=jj_bottom_layer,datatype=0)
 
 			ground_exclusion = gdstk.boolean(ground, bottom_electrodes, 'not',  precision=1e-3, layer=jj_ground_layer)			
 			cell_out.add(*ground_exclusion)
-
 
 		self.x_size_of_cell = x_position 
 		self.y_size_of_cell = height/2.0 + electrode_height_difference #respect to origin
@@ -97,24 +101,19 @@ class Overlap_jj:
 
 
 class Overlap_capa:
-	### Work in progress ###
 	'''
 	Class to generate capacitors with overlap technique (shape -|-)
 		The variable self.x_size_of_cell and self.y_size_of_cell store the size of the structure for global use
 	'''
 	def __init__(self):
-
-		# self.litho_overlap = 0.01
-		# self.spacing_capa = 3.0
-		# self.electrode_height_difference = 1.5
-		# self.y_low_current_ground = 3.0
 		
 		self.litho_overlap = None
 		self.etching_offset = None
+
 		self.height_capa = None
 		self.width_capa = None
+
 		self.new_area_capa = None
-		self.spacing_capa = None
 		self.bottom_spacing_capa = None
 		self.top_spacing_capa = None
 		self.electrode_height_difference = None
@@ -139,10 +138,11 @@ class Overlap_capa:
 
 		litho_overlap = self.litho_overlap
 		etching_offset = self.etching_offset
+
 		height = self.height_capa
 		width = self.width_capa
+
 		new_area_capa = self.new_area_capa
-		spacing = self.spacing_capa
 		bottom_spacing = self.bottom_spacing_capa
 		top_spacing = self.top_spacing_capa
 		electrode_height_difference = self.electrode_height_difference
@@ -151,10 +151,6 @@ class Overlap_capa:
 		capa_bottom_layer = self.capa_bottom_layer
 		capa_top_layer = self.capa_top_layer
 		capa_ground_layer = self.capa_ground_layer
-
-		if bottom_spacing==None or top_spacing==None:
-			bottom_spacing=spacing
-			top_spacing=spacing
 
 		# generate cell to add features to
 		cell_out = gdstk.Cell("SingleOverlap")
@@ -169,10 +165,10 @@ class Overlap_capa:
 
 		# add top layer
 		if change_area_capa:
-			new_width = width+spacing/2
+			new_width = width+top_spacing/2
 			new_height = (new_area_capa/new_width)
 			diff_height_capa = new_height - height
-			diff_width = spacing/2
+			diff_width = top_spacing/2
 		else:
 			diff_height_capa = 0
 			diff_width=0
@@ -182,7 +178,7 @@ class Overlap_capa:
 
 		# add ground
 		if add_ground:
-			ground = gdstk.rectangle((0,-(height/2+electrode_height_difference+y_low_current_ground)), (spacing+width,(height/2+electrode_height_difference+y_low_current_ground)), layer=capa_ground_layer)
+			ground = gdstk.rectangle((0,-(height/2+electrode_height_difference+y_low_current_ground)), (top_spacing+width,(height/2+electrode_height_difference+y_low_current_ground)), layer=capa_ground_layer)
 
 			bottom_electrodes =  cell_out.get_polygons(layer=capa_bottom_layer,datatype=0)
 

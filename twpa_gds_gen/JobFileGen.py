@@ -164,7 +164,6 @@ class JobFileGen:
 		file.close()
 
 
-
 	def AddTerminationCommand(self, write_layers_ref):
 
 		job_filename = self.junk_folder + 'dose_' + write_layers_ref + '.txt'
